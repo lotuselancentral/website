@@ -29,7 +29,9 @@
             </ul>
         </div>
 
-        {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+        <main id="content">
+            {% block content %}{% endblock %}
+        </main>
 
         <footer class="container">
             © {{ "now"|date("Y") }} {{ site.title }}
