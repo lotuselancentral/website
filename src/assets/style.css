@@ -10,10 +10,16 @@ header {
     height: 500px;
 }
 
-header h1 {
+header > h1 {
     margin: 0;
-    padding: 420px 2em 0;
-    line-height: 60px;
+    padding: 420px 40px 0;
+    line-height: 50px;
+}
+
+header > .strapline {
+    padding: 0 40px 0;
+    color: #ccc;
+    text-shadow: -1px -1px 1px #555;
 }
 
 .pure-menu-horizontal > ul {
