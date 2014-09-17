@@ -1,0 +1,20 @@
+body {
+    max-width: 1360px;
+}
+
+header {
+    background: #024A15 url('banner.jpg') 0 bottom no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    height: 500px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 420px 2em 0;
+    line-height: 60px;
+}
+
+.pure-menu-horizontal > ul {
+}

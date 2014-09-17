@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{{ page.title }}{% endblock %} — {{ site.title }} — {{ site.subtitle }}</title>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css" rel="stylesheet" type="text/css">
+        <link href="{{ site.url }}/assets/pure-lec.min.css" rel="stylesheet" type="text/css">
+        <link href="{{ site.url }}/assets/style.css" rel="stylesheet" type="text/css">
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-old-ie-min.css">
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+        <!--<![endif]-->
+    </head>
+    <body class="pure-skin-lec">
+        <header>
+            <h1>Lotus Elan Central</h1>
+        </header>
+
+        <div class="pure-menu pure-menu-open pure-menu-horizontal">
+            <ul>
+                <li class="pure-menu-selected"><a href="#">Home</a></li>
+                <li><a href="http://www.lotuselancentral.com/forum/">Forum</a></li>
+                <li><a href="http://wikilec.9600.org/">Wiki</a></li>
+            </ul>
+        </div>
+
+        {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+
+        <footer class="container">
+            © {{ "now"|date("Y") }} {{ site.title }}
+        </footer>
+
+        {% block scripts %}
+        {% endblock %}
+    </body>
+</html>
