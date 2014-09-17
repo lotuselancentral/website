@@ -23,7 +23,7 @@ header > .strapline {
     text-shadow: -1px -1px 1px #555;
 }
 
-main, footer {
+.container {
     margin-left: 1.4em;
     margin-right: 1.4em;
 }
