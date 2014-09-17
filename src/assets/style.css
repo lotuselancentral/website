@@ -28,5 +28,19 @@ header > .strapline {
     margin-right: 1.4em;
 }
 
+.strip-gallery,
+.strip-gallery > .pure-img {
+    height: 100px;
+}
+
+.strip-gallery {
+    overflow: hidden;
+    background-color: #eaf4e7;
+}
+
+.strip-gallery > .pure-img {
+    float: left;
+}
+
 .pure-menu-horizontal > ul {
 }
