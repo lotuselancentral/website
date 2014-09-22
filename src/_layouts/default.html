@@ -4,16 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}{{ page.title }}{% endblock %} — {{ site.title }} — {{ site.subtitle }}</title>
-        <link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css" rel="stylesheet" type="text/css">
-        <link href="{{ site.url }}/assets/pure-lec.min.css" rel="stylesheet" type="text/css">
-        <link href="{{ site.url }}/assets/style.css" rel="stylesheet" type="text/css">
-        <!--[if lte IE 8]>
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-old-ie-min.css">
-            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <![endif]-->
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
-        <!--<![endif]-->
+        <link href="{{ site.url }}/assets/style.less" rel="stylesheet/less">
+        <link href="{{ site.url }}/assets/style.css" rel="stylesheet">
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js"></script>
     </head>
     <body class="pure-skin-lec">
         <header>
@@ -49,6 +43,9 @@
 
             © 1999–{{ "now"|date("Y") }} {{ site.title }}
         </footer>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="{{ site.url }}/assets/bs/js/bootstrap.min.js"></script>
 
         {% block scripts %}
         {% endblock %}
