@@ -1,35 +1,27 @@
-body {
-    max-width: 1360px;
-    margin: 0 auto;
-}
-
 header {
     background: #024A15 url('banner.jpg') 0 bottom no-repeat;
     background-size: cover;
     color: #fff;
 
     height: 500px;
+    max-width: 1360px;
+    margin: 0 auto;
 }
 
-header > h1 {
+header h1 {
     margin: 0;
     padding: 420px 40px 0;
     line-height: 50px;
 }
 
-header > .strapline {
+header .strapline {
     padding: 0 40px 0;
     color: #ccc;
     text-shadow: -1px -1px 1px #555;
 }
 
-.container {
-    margin-left: 1.4em;
-    margin-right: 1.4em;
-}
-
 .strip-gallery,
-.strip-gallery > .pure-img {
+.strip-gallery > .img-responsive {
     height: 100px;
 }
 
@@ -38,9 +30,6 @@ header > .strapline {
     background-color: #eaf4e7;
 }
 
-.strip-gallery > .pure-img {
+.strip-gallery > .img-responsive {
     float: left;
-}
-
-.pure-menu-horizontal > ul {
 }
