@@ -41,6 +41,12 @@
         </nav>
 
         <main id="content" class="container">
+            {% block page_header %}
+            <div class="page-header">
+                <h2>{{ page.page_title|default(page.title) }}</h2>
+            </div>
+            {% endblock %}
+
             {% block content %}{% endblock %}
         </main>
 
