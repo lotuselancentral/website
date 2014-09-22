@@ -1,6 +1,7 @@
 {
     "name": "lec-website",
     "dependencies": {
+        "bootstrap": "3.2.0"
     },
     "ignore": [
         "**/.*",
