@@ -1,0 +1,9 @@
+{
+    "name": "lec-website",
+    "dependencies": {
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules"
+    ]
+}
