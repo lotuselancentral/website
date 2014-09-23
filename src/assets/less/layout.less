@@ -1,21 +1,27 @@
 header {
-    background: @lec-primary url('banner.jpg') 0 bottom no-repeat;
-    background-size: cover;
-    color: #fff;
-
-    height: 500px;
-    max-width: 1360px;
-    margin: 0 auto;
+    .sr-only();
 }
 
-header h1 {
-    margin: 0;
-    color: #fff;
-    padding-top: 420px;
-    line-height: 50px;
-}
+@media (min-width: @screen-sm-min) {
+    header {
+        background: @lec-primary url('banner.jpg') 0 bottom no-repeat;
+        background-size: cover;
+        color: #fff;
 
-header .strapline {
-    color: @gray-lighter;
-    text-shadow: -1px -1px 1px @gray;
+        height: 500px;
+        max-width: 1360px;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        margin: 0;
+        color: #fff;
+        padding-top: 420px;
+        line-height: 50px;
+    }
+
+    header .strapline {
+        color: @gray-lighter;
+        text-shadow: -1px -1px 1px @gray;
+    }
 }
