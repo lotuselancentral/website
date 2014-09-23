@@ -54,8 +54,10 @@
             {% block content %}{% endblock %}
         </main>
 
-        <footer class="container">
-            <p>© 1999–{{ "now"|date("Y") }} {{ site.title }}</p>
+        <footer class="site-footer">
+            <div class="container">
+                <p class="site-footer-smallprint pull-right">© 1999–{{ "now"|date("Y") }} {{ site.title }}</p>
+            </div>
         </footer>
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

@@ -1,3 +1,12 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: @site-footer-height;
+}
+
 @media (max-width: @screen-xs-max) {
     // This could be done outside a media query but reversing the .sr-only mixin
     // is non trivial.
@@ -28,4 +37,29 @@
         color: @gray-lighter;
         text-shadow: -1px -1px 1px @gray;
     }
+}
+
+.site-footer {
+    &:before {
+        display: block;
+        content: '';
+        height: 2px;
+        width: 100%;
+        #gradient > .striped(@lec-secondary, 90deg);
+        background-color: @lec-primary;
+        background-size: 20px 2px;
+    }
+
+    background: @site-footer-bg;
+    color: @site-footer-color;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: @site-footer-height;
+}
+
+.site-footer-smallprint {
+    .small();
+    font-weight: bold;
 }
