@@ -7,3 +7,7 @@ navbar:
         name: home
         label: Home
         url:
+    -
+        name: events
+        label: Events
+        url: events
