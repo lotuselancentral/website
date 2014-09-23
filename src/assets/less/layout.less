@@ -57,9 +57,18 @@ body {
     bottom: 0;
     width: 100%;
     height: @site-footer-height;
+
+    > .container {
+        height: 100%;
+        position: relative;
+    }
 }
 
 .site-footer-smallprint {
+    position: absolute;
+    bottom: 0;
+    right: @grid-gutter-width / 2;
+
     .small();
     font-weight: bold;
 }
