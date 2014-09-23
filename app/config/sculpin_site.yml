@@ -2,3 +2,8 @@
 # via `site.*`. So for example, {{ site.title }} can be used
 # in a template to get the contents of the `title` key.
 title: Lotus Elan Central
+navbar:
+    -
+        name: home
+        label: Home
+        url:

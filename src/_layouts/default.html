@@ -32,13 +32,9 @@
 
                 <div class="collapse navbar-collapse" id="site-navbar">
                     <ul class="nav navbar-nav">
-                        {% set navs = [
-                            ['home', 'Home', ''],
-                        ] %}
-
-                        {% for nav in navs %}
-                            <li class="{% if nav[0] == page.nav|default() %}active{% endif %}">
-                                <a href="{{ site.url }}/{{ nav[2] }}">{{ nav[1] }}</a>
+                        {% for nav in site.navbar %}
+                            <li class="{% if nav['name'] == page.nav|default() %}active{% endif %}">
+                                <a href="{{ site.url }}/{{ nav['url'] }}">{{ nav['label'] }}</a>
                             </li>
                         {% endfor %}
 
