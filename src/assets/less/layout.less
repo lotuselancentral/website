@@ -1,5 +1,9 @@
-.site-header {
-    .sr-only();
+@media (max-width: @screen-xs-max) {
+    // This could be done outside a media query but reversing the .sr-only mixin
+    // is non trivial.
+    .site-header {
+        .sr-only();
+    }
 }
 
 @media (min-width: @screen-sm-min) {
