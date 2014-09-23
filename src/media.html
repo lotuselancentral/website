@@ -1,0 +1,47 @@
+---
+layout: default
+title: Multimedia
+nav: media
+---
+
+{%- macro youtube(vid, width, height, start = 0) -%}
+    <iframe
+        class="embed-responsive-item"
+        width="{{ width }}"
+        height="{{ height }}"
+        src="//www.youtube.com/embed/{{ vid }}?modestbranding=1&amp;rel=0&amp;{{ start }}"
+        allowfullscreen
+    ></iframe>
+{%- endmacro -%}
+
+<p>
+    A selection of photographs, videos and other resources related to the M100 Elan.
+</p>
+
+<h3>Television</h3>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h4>BBC Top Gear (1990)</h4>
+        <div class="embed-responsive embed-responsive-16by9">
+            {{ _self.youtube('Q71yPwV23Go', 1920, 1080, 10) }}
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <h4>BBC Top Gear (2010)</h4>
+        <div class="embed-responsive embed-responsive-16by9">
+            {{ _self.youtube('bwoHmubxDIg', 1920, 1080) }}
+        </div>
+    </div>
+</div>
+
+<h3>Events</h3>
+
+<div class="row">
+    <div class="col-sm-4">
+        <h4>Donington, UK (2007)</h4>
+        <div class="embed-responsive embed-responsive-16by9">
+            {{ _self.youtube('9FLXzEmVe4E', 1920, 1080) }}
+        </div>
+    </div>
+</div>

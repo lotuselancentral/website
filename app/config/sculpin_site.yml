@@ -12,3 +12,7 @@ navbar:
         name: events
         label: Events
         url: events
+    -
+        name: media
+        label: Multimedia
+        url: media
