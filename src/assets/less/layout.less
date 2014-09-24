@@ -92,3 +92,21 @@ html {
     font-weight: bold;
     text-align: right;
 }
+
+.stripey {
+    body& {
+        .stripey(100%, 90deg);
+    }
+
+    #content {
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+    .site-footer {
+        &:before {
+            .stripey(100%, 90deg);
+        }
+
+        .stripey(100%, 90deg, 30%);
+    }
+}
