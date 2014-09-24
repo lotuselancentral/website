@@ -3,10 +3,6 @@ html {
     min-height: 100%;
 }
 
-body {
-    margin-bottom: @site-footer-height;
-}
-
 @media (max-width: @screen-xs-max) {
     // This could be done outside a media query but reversing the .sr-only mixin
     // is non trivial.
@@ -16,6 +12,10 @@ body {
 }
 
 @media (min-width: @screen-sm-min) {
+    body {
+        margin-bottom: @site-footer-height;
+    }
+
     .site-header {
         background: @lec-primary url('banner.jpg') 0 bottom no-repeat;
         background-size: cover;
@@ -37,6 +37,19 @@ body {
         color: @gray-lighter;
         text-shadow: -1px -1px 1px @gray;
     }
+
+    .site-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: @site-footer-height;
+    }
+
+    .site-footer-smallprint {
+        position: absolute;
+        bottom: 0;
+        right: @grid-gutter-width / 2;
+    }
 }
 
 #content {
@@ -55,11 +68,6 @@ body {
 
     background: @site-footer-bg;
     color: @site-footer-color;
-
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: @site-footer-height;
 
     > .container {
         height: 100%;
@@ -80,10 +88,7 @@ body {
 }
 
 .site-footer-smallprint {
-    position: absolute;
-    bottom: 0;
-    right: @grid-gutter-width / 2;
-
     .small();
     font-weight: bold;
+    text-align: right;
 }
