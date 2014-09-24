@@ -1,5 +1,11 @@
-.stripey(@width, @angle: 90deg) {
-    background-color: @lec-primary;
-    #gradient > .striped(@lec-secondary, @angle);
+.stripey(@width, @angle: 90deg, @alpha: 100%) {
+    @body-bg: mix(@lec-primary, #fff, @alpha);
+    @stripe-bg: mix(@lec-secondary, #fff, @alpha);
+
+    background-color: @stripe-bg;
     background-size: @width 2px;
+
+    background-image: -webkit-linear-gradient(@angle, @body-bg 40%, transparent 40%, transparent 60%, @body-bg 60%);
+    background-image: -o-linear-gradient(@angle, @body-bg 40%, transparent 40%, transparent 60%, @body-bg 60%);
+    background-image: linear-gradient(@angle, @body-bg 40%, transparent 40%, transparent 60%, @body-bg 60%);
 }
