@@ -63,7 +63,9 @@ html {
         content: '';
         height: 2px;
         width: 100%;
-        .stripey(20px);
+        background-color: @lec-secondary;
+        #gradient > .striped(@lec-primary, 90deg);
+        background-size: 50px 2px;
     }
 
     background: @site-footer-bg;
